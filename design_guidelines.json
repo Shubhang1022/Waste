@@ -1,0 +1,161 @@
+{
+  "brand_identity": {
+    "name": "ReCircuit",
+    "archetype": "Organic & Earthy (Tech Twist)",
+    "emotional_tone": "Resourceful, Optimistic, Innovative, Clean",
+    "description": "Turning e-waste into innovation. A platform that bridges the gap between electronic waste and creative DIY projects."
+  },
+  "typography": {
+    "headings": {
+      "family": "Outfit, sans-serif",
+      "weights": ["500", "700"],
+      "usage": "Use for all section headers, hero titles, and card titles. Tight tracking (-0.02em)."
+    },
+    "body": {
+      "family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Use for all paragraph text, inputs, and UI elements."
+    },
+    "mono": {
+      "family": "JetBrains Mono, monospace",
+      "usage": "Use for budget displays, technical specs, and code snippets."
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#1A4D2E",
+        "foreground": "#FFFFFF",
+        "description": "Deep Forest Green - Used for primary buttons, active states, and strong borders."
+      },
+      "secondary": {
+        "DEFAULT": "#F5F5F0",
+        "foreground": "#1A4D2E",
+        "description": "Earthy Beige - Used for section backgrounds, cards, and soft UI elements."
+      },
+      "accent": {
+        "DEFAULT": "#84CC16",
+        "foreground": "#000000",
+        "description": "Electric Lime - Used for 'Innovation' highlights, success states, and call-to-actions."
+      },
+      "background": {
+        "light": "#FFFFFF",
+        "dark": "#0F1C13"
+      },
+      "surface": {
+        "light": "#F9FAFB",
+        "dark": "#15231A"
+      },
+      "muted": {
+        "DEFAULT": "#E5E7EB",
+        "foreground": "#6B7280"
+      }
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #F5F5F0 0%, #FFFFFF 100%)",
+      "glass": "rgba(255, 255, 255, 0.7)"
+    }
+  },
+  "visual_enhancers": {
+    "radius": {
+      "default": "0.75rem",
+      "button": "9999px",
+      "card": "1rem"
+    },
+    "shadows": {
+      "card": "0 4px 6px -1px rgba(26, 77, 46, 0.1), 0 2px 4px -1px rgba(26, 77, 46, 0.06)",
+      "hover": "0 10px 15px -3px rgba(26, 77, 46, 0.1), 0 4px 6px -2px rgba(26, 77, 46, 0.05)"
+    },
+    "borders": {
+      "default": "1px solid #E5E7EB",
+      "active": "1px solid #1A4D2E"
+    },
+    "textures": {
+      "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")"
+    }
+  },
+  "layout_strategies": {
+    "landing_hero": {
+      "type": "Tetris Grid",
+      "structure": "grid-cols-1 md:grid-cols-12 gap-6",
+      "elements": [
+        { "role": "headline", "span": "col-span-full md:col-span-7", "style": "text-6xl font-bold tracking-tight" },
+        { "role": "visual", "span": "col-span-full md:col-span-5", "style": "rounded-2xl overflow-hidden h-[400px]" },
+        { "role": "stats", "span": "col-span-6 md:col-span-4", "style": "bg-secondary p-6 rounded-xl" },
+        { "role": "cta", "span": "col-span-6 md:col-span-8", "style": "flex items-center gap-4" }
+      ]
+    },
+    "innovation_generator": {
+      "type": "Split Screen",
+      "structure": "grid grid-cols-1 lg:grid-cols-2 gap-12",
+      "left_panel": "Input Form (Sticky)",
+      "right_panel": "Live Preview / Contextual Tips"
+    },
+    "results_grid": {
+      "type": "Masonry / Bento",
+      "structure": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+      "card_style": "bg-white border border-border hover:border-primary transition-all duration-300 hover:shadow-lg group"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-white hover:bg-primary/90 rounded-full px-8 py-6 text-lg font-medium transition-transform hover:scale-105",
+      "secondary": "bg-secondary text-primary hover:bg-secondary/80 rounded-full px-6 py-4",
+      "outline": "border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-full px-6 py-4"
+    },
+    "cards": {
+      "innovation_card": "relative overflow-hidden bg-white rounded-2xl border border-border p-6 flex flex-col gap-4 hover:border-accent transition-colors",
+      "step_card": "bg-secondary/50 rounded-xl p-6 border-l-4 border-primary"
+    },
+    "inputs": {
+      "text": "bg-white border-2 border-gray-200 focus:border-primary rounded-xl px-4 py-3 outline-none transition-colors",
+      "file_upload": "border-2 border-dashed border-gray-300 hover:border-primary rounded-2xl p-12 text-center cursor-pointer transition-colors bg-gray-50 hover:bg-secondary/30"
+    },
+    "badges": {
+      "difficulty": {
+        "beginner": "bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider",
+        "intermediate": "bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider",
+        "advanced": "bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider"
+      }
+    }
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1737998246583-94de7a064f09?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Green wires close up - use as subtle texture or hero visual blend",
+      "category": "texture"
+    },
+    "e_waste_context": {
+      "url": "https://images.unsplash.com/photo-1717667745934-53091623e8ee?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Stack of graphics cards - represents the input problem",
+      "category": "context"
+    },
+    "diy_action": {
+      "url": "https://images.unsplash.com/photo-1745571479662-54a2ad1c747f?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Person working on circuit board - represents the process",
+      "category": "action"
+    },
+    "eco_result": {
+      "url": "https://images.unsplash.com/photo-1754848158756-d81726b57617?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Green aquatic plants - represents the sustainable outcome",
+      "category": "result"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Implement the 'Organic & Earthy' theme strictly. Avoid generic SaaS blues.",
+    "Use 'Outfit' font for all headings. Import it from Google Fonts.",
+    "The 'Innovation Generator' form should feel like a wizard. Use clear steps.",
+    "For the 'Budget' input, use a slider combined with a number input for better UX.",
+    "The 'Results' page should look like a Pinterest board of ideas.",
+    "Use the provided image URLs for the respective sections. Do not use placeholders.",
+    "Ensure all interactive elements have hover states that include a slight lift (-translate-y-1) and shadow increase.",
+    "Use 'lucide-react' for icons. Pick icons that are rounded and friendly.",
+    "Add 'data-testid' to all inputs and buttons."
+  ],
+  "universal_guidelines": {
+    "spacing": "Use generous padding (p-8, p-12) to create breathing room.",
+    "interaction": "All buttons must have a 'scale-95' active state for tactile feedback.",
+    "accessibility": "Ensure text contrast ratios are met, especially on the green buttons.",
+    "motion": "Use 'framer-motion' for page transitions and list item entrances (staggered)."
+  }
+}
